@@ -1,3 +1,7 @@
+# This Repository is the learning of React Native
+
+- In this repository i have saves all the understanding of my react native course
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
