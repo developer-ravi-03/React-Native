@@ -13,13 +13,22 @@ import {
 import React from 'react';
 
 const App = () => {
+  //it is method of  javascript object of css
+  // const style = {
+  //   container: {
+  //     height: '100%',
+  //     width: '100%',
+  //     backgroundColor: 'black',
+  //     paddingTop: 30,
+  //   },
+  // };
+
   return (
     // on the place of View we use safe srea view for notchable automatically
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
       {/* hello */}
-      <Text>Hello kaise ho </Text>
-      <Text>Thik hu </Text>
-      <Text>Tum Kaise ho </Text>
+      <Text style={{color: 'white', fontSize: 20}}>Radhe Radhe🙏🙏</Text>
+      <Text style={styles.text}>Jai Shree Krishna🙏🙏</Text>
 
       {/* for image  */}
       <Image
@@ -41,8 +50,8 @@ const App = () => {
       </TouchableOpacity>
 
       {/* method 3 for button add  */}
-      <Pressable style={{padding: 10, backgroundColor: 'yellow'}}>
-        <Text>Press Me</Text>
+      <Pressable style={styles.button}>
+        <Text style={styles.buttonText}>Press Me</Text>
       </Pressable>
     </SafeAreaView>
   );
@@ -53,4 +62,23 @@ export default App;
 // background-color - kabab case
 // backgroundColor - Camel case
 
-const styles = StyleSheet.create({});
+//rect native stylesheet method of passing style
+const styles = StyleSheet.create({
+  container: {
+    height: '100%',
+    width: '100%',
+    backgroundColor: 'black',
+    paddingTop: 30,
+  },
+  text: {color: 'white', fontSize: 20},
+  button: {
+    backgroundColor: 'yellow',
+    padding: 10,
+    borderRadius: 5,
+  },
+  buttonText: {
+    color: 'black',
+    fontSize: 16,
+    textAlign: 'center',
+  },
+});
